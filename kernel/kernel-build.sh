@@ -3,16 +3,15 @@
 # Based on compiling script for QuicksilveR kernel.
 # This script does not include any module functionality, as everything is inlined.
 # Copyright (C) 2020-2021 Adithya R.
-# Copyright (C) 2023-202x rk134.
 
 SECONDS=0 # builtin bash timer
 ZIPNAME="GatoKernel-topaz-$(date '+%Y%m%d-%H%M').zip"
 #TC_DIR="/home/rk134/aospa/kernel/kernel/work/tc/clang"
-GCC_64_DIR="/home/rahul/aospa/prebuilts/gcc/gcc64" # to modify
-GCC_32_DIR="/home/rahul/aospa/prebuilts/gcc/gcc32" # to modify
+GCC_64_DIR="/home/rahul/aospa/prebuilts/gcc/gcc64"
+GCC_32_DIR="/home/rahul/aospa/prebuilts/gcc/gcc32"
 export PATH="$GCC_64_DIR/bin:$GCC_32_DIR/bin:$PATH"
 AK3_DIR="AnyKernel3"
-DEFCONFIG="vendor/lahaina-qgki_defconfig" # to modify
+DEFCONFIG="vendor/yupik-qgki_defconfig"
 
 # Make arguments & parameters for clang-18
 #MAKE_PARAMS="O=out ARCH=arm64 \
